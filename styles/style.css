@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #24124e;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #1a1a2e;
+}
+
+.enlaces-navegacion {
+    list-style: none;
+    display: flex;
+}
+
+.enlaces-navegacion li {
+    margin: 0 15px;
+}
+
+.enlaces-navegacion .gris{
+    color: rgb(204, 204, 204);
+    text-decoration: none;
+}
+
+.enlaces-navegacion .blanco {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton {
+    background: linear-gradient(to right, rgb(100, 63, 186), rgb(58, 112, 228));
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.texto-hero {
+    flex: 1;
+    width: 50%;
+    color: white;
+    padding: 0px 0px 0px 279px;
+}
+
+.texto-hero h1 {
+    
+    font-size: 4.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    padding-bottom: 30px;
+}
+
+.texto-hero p {
+    font-size: 1.3rem;
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.botones {
+    display: inline-flex;
+    gap: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid white;
+    margin-right: 350px;
+}
+
+.botones button {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.boton-primario {
+    background: linear-gradient(to right, rgb(191, 134, 198), rgb(216, 47, 193));
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 13px 33px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-secundario {
+    background: #24124e;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    padding: 13px 36px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.imagen-hero {
+    flex: 2;
+    display: flex;   
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen-fondo {
+    background: url(../img/hojasFondo.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telefono {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 170px;
+    transform: translateY(20px);
+}
+
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    width: 100%;
+}
+.caracteristicas h2, .texto-caracteristicas h3, .texto-caracteristicas h5, .tarjeta .rosa, footer .rosa{
+    color: #e94560;
+}
+
+.caracteristicas h2 {
+    font-size: 4rem;
+    padding-bottom: 75px;
+}
+
+.texto-caracteristicas {
+    text-align: start;
+}
+
+.texto-caracteristicas h3 { 
+    font-size: 2.5rem;
+    padding-bottom: 40px;
+}
+
+.texto-caracteristicas h5 {
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+}
+
+.texto-caracteristicas p {
+    padding-bottom: 15px;
+}
+
+.texto-caracteristicas li {
+    padding-bottom: 4px;
+}
+
+.texto-caracteristicas p , li {
+    font-size: 1rem;
+}
+
+.fa-circle-check {
+    color: #E91E63;
+    margin-right: 4px; 
+    font-size: 18px; 
+}
+
+.fa-star , .fa-check , .fa-xmark {
+    margin-right: 28px; 
+}
+
+.lite .fa-star , .lite .fa-check {
+    color: #E91E63;
+    font-size: 18px; 
+}
+
+
+.contenido-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+}
+
+.contenido-caracteristicas img {
+    width: 30%;
+    height: 35%;
+}
+.precios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    width: 100%;
+}
+
+.precios h2 {
+    font-size: 3.8rem;
+    padding-bottom: 40px;
+}
+
+.precios p {
+    padding-bottom: 60px;
+}
+
+.tarjetas-precios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    color: black;
+    border-radius: 5px;
+    width: 270px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tarjeta p {
+    padding-bottom: 30px;
+    padding-top: 33px;
+}
+.tarjeta ul, .texto-caracteristicas ul {
+    list-style: none;
+}
+
+.tarjeta li {
+    padding-bottom: 8px;
+    padding-left: 13px;
+}
+
+.espaciado {
+    background: rgb(246, 246, 246);
+    width: 100%;
+    height: 70px;
+    padding-top: 9px;
+    border-radius: 5px;
+}
+
+.tarjeta .button {
+    background: linear-gradient(to right, rgb(191, 134, 198), rgb(216, 47, 193));
+    padding: 14px 22px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tarjeta .button2 {
+    background: #24124e;
+    padding: 14px 22px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tarjeta .button3 {
+    background: #24124e;
+    padding: 14px 22px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.gray {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(246, 246, 246);
+    width: 100%;
+    height: 20px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.text-precio {
+    font-size: 2rem;
+}
+
+.listado i {
+    width: 20px;
+    text-align: center;
+}
+
+.listado {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.listado li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    background: rgb(224, 224, 224);
+    color: rgb(88, 88, 88);
+    text-align: center;
+    width: 100%;
+}
+
+.icono-social img {
+    width: 265px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.icono-social img:hover {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 1279px) {
+    .hero {
+        flex-direction: column;
+    }
+    .texto-hero {
+        text-align: center;
+        padding: 20px;
+    }
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 920px) {
+    .contenido-caracteristicas {
+        flex-direction: column;
+    }
+    .tarjetas-precios {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .enlaces-navegacion {
+        flex-direction: column;
+    }
+    .texto-hero h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        text-align: center;
+    }
+    .texto-hero {
+        width: 100%;
+        padding: 0;
+    }
+}
